@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-class PhraseologyPage {
+public class PhraseologyPage {
     private final AndroidDriver driver;
     private final WebDriverWait wait;
 

@@ -34,8 +34,6 @@ public class OnboardPage {
     private final By slideImageLocator = By.xpath("");
 
 
-
-
     public boolean isLogoVisible() {
         WebElement logo = wait.until(ExpectedConditions.visibilityOfElementLocated(appLogoLocator));
         System.out.println("Logo is displayed");
@@ -105,7 +103,6 @@ public class OnboardPage {
         WebElement firstSlideText = wait.until(ExpectedConditions.visibilityOfElementLocated(slideTextLocator));
         String text1 = firstSlideText.getText();
         System.out.println("Slide 1 Text: " + text1);
-
 
         swipeLeft();
         WebElement secondSlideText = wait.until(ExpectedConditions.visibilityOfElementLocated(slideTextLocator));
